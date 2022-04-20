@@ -26,6 +26,7 @@ app.get('/',function(req,res){
 app.get('/add',function(req,res){
     var q = 'SELECT COUNT(*) AS count FROM employee';
     connection.query(q,function(err,results){
+        
         if(err) throw err;
         var count = results[0].count;
 
