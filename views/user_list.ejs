@@ -1,0 +1,45 @@
+<link href="./style.css" rel="stylesheet" type="text/css">
+<h1>EMPLOYEE DATA</h1>
+<div class="centerT">
+    <div class="table-data">
+    
+        <table border="1">
+            <tr>
+                <th>Employee No.</th>
+                <th>Employee Name</th>
+                <th>Salary</th>
+                <th>Department Number</th>
+                <th>Manger Number</th>
+                <th>Date of Joining</th>
+                <th>Desgination</th>
+                <th>City</th>
+                <th>Pincode</th>
+            </tr>
+            
+            <%
+            if(userData.length!=0){
+            var i=1;
+            userData.forEach(function(data){
+            %>
+            <tr>
+                <td><%=data.ENO%></td>
+                <td><%=data.ENAME %></td>
+                <td><%=data.SALARY %></td>
+                <td><%=data.DNO %></td>
+                <td><%=data.MNGRNO %></td>
+                <td><%=data.DOJ %></td>
+                <td><%=data.JOB %></td>
+                <td><%=data.CITY %></td>
+                <td><%=data.PINCODE %></td>
+                
+            </tr>
+            <%  i++; }) %>
+            <% } else{ %>
+                <tr>
+                    <td colspan="7">No Data Found</td>
+                </tr>
+            <% } %>
+        </table>
+        </div>
+</div>
+

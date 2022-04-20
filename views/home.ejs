@@ -1,0 +1,47 @@
+<link href="./style.css" rel="stylesheet" type="text/css">
+<h1>ENTER DATA INTO EMPLOYEE DATABASE</h1>
+<p class="lead" style="text-align: center;">Total number of employee avaliable now: <strong><%=data%></strong> </p>
+<div class="center">
+
+    <form method="post" action="/insert">
+        <label>Enter Employe Number :  <input type="number" class="form" name="ENO" placeholder="Enter employe no"></label>
+       </br>
+    </br>
+        <label >Enter Employe name : <input type="text" class="form" name="Employee_Name" placeholder="Enter employe name"></label>
+        </br></br>
+        <label >Enter salary:<input type="number" class="form" name="salary" placeholder="Enter salary"></label>
+        </br></br>
+        <label >Enter Department number:</label>
+        <select name="DNO" >
+            <option value="1">1-Planning</option>
+            <option value="10">10-Production</option>
+            <option value="22">22-Testing</option>
+            <option value="45">45-Sales</option>
+        </select>
+    </br></br>
+        <label >Enter manager no: <input type="number" class="form" name="MNGRNO" placeholder="Enter manager No"></label>
+        </br></br>
+        <label >Enter date of Joining: <input type="date" class="form" name="DOJ" placeholder="Enter Date of Joining"></label>
+        </br></br>
+        <label for="city">Select City:</label>
+      <select id="cars" name="city">
+        <option value="KOCHI">KOCHI</option>
+        <option value="MUMBAI">MUMBAI</option>
+        <option value="CHENNAI">CHENNAI</option>
+        
+      </select>
+      <!--JOB ADDRESS PINCODE-->
+    </br></br>
+      <label >Enter Desgination : <input type="text" class="form" name="JOB" placeholder="Enter Desgination"></label>
+      </br></br>
+      <label>Enter Address : <input type="text" name="ADDRESS" placeholder="Enter Address : "></label>
+    </br></br>
+        <label>Enter pincode : <input type="number" name="PINCODE" placeholder="pincode" placeholder="Enter pincode : "></label>
+    </br></br>
+      <div class="buttoncenter">
+        <button class="button" onsubmit="">INSERT NOW</button>
+      </div>
+       
+    </form>
+</div>
+
